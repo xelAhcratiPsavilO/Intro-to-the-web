@@ -3,10 +3,28 @@ This is my anchor link to<a href = 'http://google.com'>
 <br />
 </a>
 <div style = 'background:rgb(165,38,18)'>
-<a href = 'https://www.google.co.uk/search?q=cardinal&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjK_seo_9fZAhWHJ8AKHflXC-YQ_AUICigB&biw=1168&bih=1099'>
-<img style='border: 3px dotted white' src='http://dlanham.com/art/cardinal/dlanham-Cardinal.jpg' alt='Cardinal Images' width=550 height=300>
+<a href = 'https://www.google.co.uk/search?biw=1440&bih=799&tbm=isch&sa=1&ei=ZFigWv-_C6yPgAbyj7iACg&q=angry+birds&oq=angry+birds&gs_l=psy-ab.3..0j0i67k1j0l3j0i67k1j0l4.34867.36891.0.37228.11.8.0.3.3.0.75.559.8.8.0....0...1c.1.64.psy-ab..0.11.606....0.rhqJBTt0saQ'>
+<img style='border: 3px dotted white' src='http://www.aimcenteraz.com/wp-content/uploads/2017/12/best-15-red-angry-bird-vector-library-1024x717.jpg' alt='Cardinal Images' width=400 height=300>
 </a>
 </div>
-<h1>Cardinal says:</h1> <h2><%= @expression %>
-My favourite number is
-<%= @rand %></h2>
+<div style = 'background:rgb(165,38,18)'>
+<a href = 'https://www.google.co.uk/search?biw=1440&bih=799&tbm=isch&sa=1&ei=o1egWu0Ro-aABo3ep9AK&q=garfield+and+pizza&oq=garfield+and+pizza&gs_l=psy-ab.3..0.185966.192045.0.192340.22.16.0.6.6.0.91.970.14.16.0....0...1c.1.64.psy-ab..0.20.1062.0..0i67k1j0i8i30k1.42.fUFMbHiY4mI'>
+<img style='border: 3px dotted white' src='http://www.catster.com/wp-content/uploads/2015/06/garfield.jpg' alt='Cardinal Images' width=400 height=200>
+</a>
+</div>
+<h1>Animals
+  <a href = '/form'>
+  <b> say:</b>
+  </a>
+</h1>
+<% if @birdy %>
+<h2><%= @birdy %>
+I survided this many cats:
+<%= @rand_bird %></h2>
+<% end %>
+<br />
+<% if @kitty %>
+<h2><%= @kitty %>
+Last night I ate this many birds:
+<%= @rand_cat %></h2>
+<% end %>

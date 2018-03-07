@@ -25,10 +25,20 @@ end
 #   "Goodnight!"
 # end
 #
-get '/cardinal' do
+get '/random-animal' do
   @expression = ["Twit Twit,", "Go Cardinals!", "Flying time,"].sample
   @rand = rand(6)+1
   erb(:index)
+end
+post '/expression-animals' do
+  @birdy = params[:cardinal_goes_twit]
+  @kitty = params[:cat_goes_meow]
+  @rand_bird = rand(6)+1
+  @rand_cat = rand(6)+1
+  erb(:index)
+end
+get '/form' do
+  erb(:animal_form)
 end
 #
 # <!DOCTYPE html>
